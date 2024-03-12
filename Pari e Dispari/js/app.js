@@ -1,12 +1,15 @@
 
 //L'utente sceglie pari o dispari e inserisce un numero da 1 a 5
-//utilizzio dei cicli do-while per far comparire il prompt finchè l'utente metta pari o dispari
+//utilizzio un ciclo do-while per far comparire il prompt finchè l'utente metta un numero da 1 a 5
+let userNumber
 do {
     userNumber = parseInt(prompt('Scrivi un numero da 1 a 5'))
 } while (userNumber < 1 || userNumber > 5) 
 
 console.log(userNumber);
 
+//utilizzio un ciclo do-while per far comparire il prompt finchè l'utente metta pari o dispari
+let userEvenChoice 
 do {
     userEvenChoice = prompt('scrivi PARI o DISPARI').toLowerCase()
 } while (userEvenChoice !== 'pari' && userEvenChoice !== 'dispari') 
